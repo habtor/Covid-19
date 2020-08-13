@@ -371,9 +371,21 @@
                         <p id="deaths" class="red"></p>
                     </div>
 
-                    <div class="death">
+                    <div class="activee">
                         <h4>Active</h4>
                         <p id="active" class="act"></p>
+                    </div>
+
+
+
+                </div>
+
+                <div class="data-div2">
+
+            
+                    <div class="activeee act2">
+                        <h4>Active</h4>
+                        <p id="active2" class="act"></p>
                     </div>
 
 
@@ -417,19 +429,21 @@
         let recoverd = document.getElementById("recoverd")
         let deaths = document.getElementById("deaths")
         let active = document.getElementById("active")
+        let active2 = document.getElementById("active2")
 
         confirmed.innerHTML = ""
         recoverd.innerHTML = ""
         deaths.innerHTML = ""
         active.innerHTML = ""
+        active2.innerHTML = ""
 
         confirmed.append("" + data[index].Confirmed.toLocaleString('en'))
         recoverd.append("" + data[index].Recovered.toLocaleString('en'))
         deaths.append("" + data[index].Deaths.toLocaleString('en'))
         active.append("" + data[index].Active.toLocaleString('en'))
-
-
+        active2.append("" + data[index].Active.toLocaleString('en'))
     }
+
     window.onload = function () {
         getCovidStats();
     }

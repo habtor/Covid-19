@@ -60,7 +60,7 @@ ul {
 /* ================================== content ========================================= */
 
 .nav {
-   
+
     justify-content: space-between;
     margin: 0 50px 40px 50px;
     color: black;
@@ -147,6 +147,8 @@ ul {
 .Us-span {
     color: #F6A563;
 }
+
+
 
 
 
@@ -238,14 +240,20 @@ ul {
     display: flex;
     justify-content: space-between;
     margin: 20px auto 20px auto;
-    
+}
 
-
+.data-div2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto 20px auto;
+    display: none;
 }
 
 .active,
 .recoverd,
-.death {
+.death,
+.activee,
+.activeee {
     background: #c6e6f9;
     box-shadow: 5px 5px 9px #b4d1e3,
         -5px -5px 9px #d8fbff;
@@ -256,6 +264,10 @@ ul {
     border-radius: 6px;
     height: 80px;
 
+}
+
+.activee {
+    display: v;
 }
 
 
@@ -294,7 +306,7 @@ ul {
     }
 
     .formm {
-        text-align: center;        
+        text-align: center;
     }
 
     .learn-more-btn {
@@ -531,3 +543,16 @@ label input:checked~.fa {
         inset -2px -2px 3px #d8fbff;
 }
 
+@media (max-width: 800px) {
+    .activee {
+        display: none;
+    }
+
+    .data-div2 {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px auto 10px auto;
+        padding-right: 15px;
+       
+    }
+}
